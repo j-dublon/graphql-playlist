@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const app = express();
 
 mongoose.connect(
-  "mongodb+srv://jodi:Password123@graphql-practice.kfvp6.mongodb.net/<dbname>?retryWrites=true&w=majority"
+  "mongodb+srv://jodi:Password123@graphql-practice.kfvp6.mongodb.net/graphql-practice?retryWrites=true&w=majority"
 );
 mongoose.connection.once("open", () => {
   console.log("connected to database");
